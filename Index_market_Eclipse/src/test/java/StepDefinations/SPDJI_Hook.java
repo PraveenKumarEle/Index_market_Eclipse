@@ -37,7 +37,7 @@ public class SPDJI_Hook
 	{
 		TakesScreenshot ts=(TakesScreenshot)BaseClass.driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File tgt=new File("C:/Users/Praveen Kumar Ele/Documents/GitHub/Index_market_Eclipse/ScreenShots/"+ScenarioName+".jpg");
+		File tgt=new File("C:/Users/Praveen Kumar Ele/Documents/GitHub/Index_market_Eclipse/Index_market_Eclipse/ScreenShots/"+ScenarioName+".jpg");
 		Files.copy(src, tgt);
 		
 	}

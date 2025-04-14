@@ -36,7 +36,7 @@ public class SP500_Index_page {
     public SP500_Index_page (WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         executor = (JavascriptExecutor)driver;
     }
 
