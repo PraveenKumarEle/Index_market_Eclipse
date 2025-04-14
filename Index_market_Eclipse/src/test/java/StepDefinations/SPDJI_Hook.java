@@ -30,8 +30,7 @@ public class SPDJI_Hook
 	@After
 	public void AfterCompletionOfScenarios(Scenario scenario) throws IOException
 	{
-		String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new 
-				Date());
+		String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
 	String	ScenarioName=scenario.getName().replaceAll(" ", "_")+timeStamp;
 	if(scenario.isFailed())
 	{
